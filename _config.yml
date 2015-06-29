@@ -1,0 +1,26 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
+
+# Setup
+title:            "Jess and Jay"
+tagline:          'Jess and Jay'
+description:      "Jess and Jay's wedding"
+url:              http://jessandjay.info
+baseurl:          /
+
+author:
+  name:           'Jay H'
+  url:            http://www.jehosafet.com
+
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
+github:
+  repo:           https://github.com/jessandjay/jessandjay.github.io

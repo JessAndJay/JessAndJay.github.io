@@ -10,13 +10,9 @@ txt.content = "Score: 0";
 txt.fillColor = "white";
 txt.fontSize = "1em";
 
-// var handImg = new Raster('hand');
-// handImg.position = view.center;
-
 function onResize(event) {
     // Whenever the window is resized, recenter the path:
-    // path.position = view.center;
-    // handImg.position = view.center;
+    handImg.position = view.center;
 }
 
 function onFrame(event) {
@@ -112,8 +108,8 @@ var moveStars = new function() {
     }
 
     var vector = new Point({
-        angle: 45,
-        length: 0
+        angle: 100,
+        length: 5
     });
 
 
@@ -124,7 +120,7 @@ var moveStars = new function() {
         keepInView(earthImg);
 
         var layer = project.activeLayer;
-        for (var i = 0; i < count; i++) {
+        for (var i = 0; i < count+2; i++) {
             var item = layer.children[i];
             var size = item.bounds.size;
             var length = vector.length / 10 * size.width / 10;
@@ -135,6 +131,7 @@ var moveStars = new function() {
     };
 };
 
+var handImg = new Raster('hand');
 var whap = new Raster('whap');
 whap.visible = false;
 var moveRainbow = new function() {
@@ -154,11 +151,7 @@ var moveRainbow = new function() {
     var vector = (view.center - position) / 10;
     if (vector.length < 5)
         vector.length = 5;
-
-    var handImg = new Raster('hand');
-    handImg.position = view.center;
-    // handImg.scale(0.2);
-
+    
     var eyePosition = new Point();
     var eyeFollow = (Point.random() - 0.5);
     var blinkTime = 200;
@@ -231,7 +224,7 @@ var moveRainbow = new function() {
             earthImg.visible = false;
             whap.bringToFront();
         }
-
+        handImg.insertAbove(group);
         // createHead(vector, event.count);
     }
 }

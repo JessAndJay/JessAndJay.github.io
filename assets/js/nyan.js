@@ -10,6 +10,15 @@ txt.content = "Score: 0";
 txt.fillColor = "white";
 txt.fontSize = "1em";
 
+// var handImg = new Raster('hand');
+// handImg.position = view.center;
+
+function onResize(event) {
+    // Whenever the window is resized, recenter the path:
+    // path.position = view.center;
+    // handImg.position = view.center;
+}
+
 function onFrame(event) {
     position += (mousePos - position) / 10;
     var vector = (view.center - position) / 10;
@@ -67,6 +76,13 @@ function keepInView(item) {
 
 var earthImg = new Raster('earth');
 var moveStars = new function() {
+    earthImg.data = {
+        vector: new Point({
+            angle: Math.random() * 360,
+            length : 1 * Math.random() / 5
+        })
+    };
+    
     // The amount of symbol we want to place;
     var count = 100;
 
@@ -95,15 +111,6 @@ var moveStars = new function() {
         };
     }
 
-    earthImg.data = {
-        vector: new Point({
-            angle: Math.random() * 360,
-            length : 1 * Math.random() / 5
-        })
-    };
-
-
-
     var vector = new Point({
         angle: 45,
         length: 0
@@ -113,6 +120,9 @@ var moveStars = new function() {
     return function(vector) {
         // Run through the active layer's children list and change
         // the position of the placed symbols:
+        earthImg.position += earthImg.data.vector;
+        keepInView(earthImg);
+
         var layer = project.activeLayer;
         for (var i = 0; i < count; i++) {
             var item = layer.children[i];
@@ -121,9 +131,7 @@ var moveStars = new function() {
             item.position += vector.normalize(length) + item.data.vector;
             keepInView(item);
         }
-
-        earthImg.position += earthImg.data.vector;
-        keepInView(earthImg);
+        earthImg.insertAbove(layer.children[count-1]);
     };
 };
 

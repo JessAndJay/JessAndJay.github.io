@@ -9,7 +9,7 @@ relative_permalinks: true
 # Setup
 title:            "Jess & Jay"
 tagline:          'Jess & Jay'
-description:      "June 11th, 2016<br><br>203 Heritage Oaks Ln<br>Houston, TX 77024<hr><i>More details soon!</i>"
+description:      'June 11th, 2016<br><br>203 Heritage Oaks Ln<br>Houston, TX 77024 (<a href="https://goo.gl/maps/3bqGA">map</a>)<hr><i>More details soon!</i>'
 url:              http://jessandjay.info
 baseurl:          /
 

@@ -4,11 +4,17 @@ var lastAngle = 180;
 var frames = 0;
 var earthFrames = 0;
 var score = 0;
+var earthFramesUntilReturn = 100;
 
-var txt = new PointText(new Point(200, 50));
+var txt = new PointText(new Point(300, 300));
+txt.visible = false;
 txt.content = "Score: 0";
 txt.fillColor = "white";
 txt.fontSize = "1em";
+
+function getRandomArbitrary(min, max) {
+    return Math.random() * (max - min) + min;
+}
 
 function onResize(event) {
     // Whenever the window is resized, recenter the path:
@@ -21,8 +27,12 @@ function onFrame(event) {
     moveStars(vector * 3);
     moveRainbow(vector, event);
     // earthImg.bringToFront();
-    frames++;
-    earthFrames++;
+    if (whap.visible) {
+        frames++;
+    }
+    if (!earthImg.visible) {
+        earthFrames++;
+    }
     if(frames > 60){
         frames = 0;
         if( whap.visible ){
@@ -31,13 +41,14 @@ function onFrame(event) {
             txt.content = "Score: " + score;
         }
     }
-    if(earthFrames > 180){
+    if(earthFrames > earthFramesUntilReturn){
         earthFrames = 0;
         if (!earthImg.visible){
             earthImg.visible = true;
+            earthFramesUntilReturn = getRandomArbitrary(60 + score, (score/10 + 1)*360);
         }
     }
-    txt.position = new Point(200,50);
+    // txt.position = new Point(view.bounds.width*0.8,view.bounds.height*0.1);
 }
 
 function onMouseMove(event) {

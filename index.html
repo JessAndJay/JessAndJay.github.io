@@ -1,5 +1,30 @@
 ---
-layout: default
+layout: home
 title: Home
 ---
+<link rel="stylesheet" href="{{ site.baseurl }}assets/css/paper-styles.css"> <!-- for paper.js -->
+<canvas id="myCanvas" resize></canvas>
+<div class="content-stars container">
+</div>
 
+<script type="text/javascript">
+
+  var canvas = document.getElementById('myCanvas');
+  // fitToContainer(canvas);
+
+  function fitToContainer(canvas){
+    // Make it visually fill the positioned parent
+    // canvas.style.width ='100%';
+    canvas.style.height='100%';
+    console.log(canvas.offsetWidth);
+    console.log(canvas.offsetHeight);
+    console.log(canvas.width);
+    console.log(canvas.height);
+    // ...then set the internal size to match
+    // canvas.width  = canvas.width;
+    // canvas.height  = screen.height*0.85;
+    // canvas.height = Math.min(canvas.width, canvas.height);
+    canvas.height = canvas.offsetHeight;
+  }
+
+</script>

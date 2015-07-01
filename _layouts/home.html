@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  {% include head.html %}  
+  <body>
+
+    {% include sidebar.html %}
+    <!--<img src="assets/images/us.png">-->
+    <img src="{{ site.baseurl }}assets/images/heart.png" id="whap" style='display: none;' />
+    <img src="{{ site.baseurl }}assets/images/jess.png" id="hand" style='display: none;' />
+    <img src="{{ site.baseurl }}assets/images/jay.png" id="earth" style='display: none;' />
+    <script type="text/paperscript" src="{{ site.baseurl }}assets/js/nyan.js" canvas="myCanvas"></script>
+
+    {{ content }}
+  </body>
+</html>

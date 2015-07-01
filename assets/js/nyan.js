@@ -12,6 +12,12 @@ txt.content = "Score: 0";
 txt.fillColor = "white";
 txt.fontSize = "1em";
 
+var hitOptions = {
+    stroke: false,
+    fill: true,
+    tolerance: 40
+};
+
 function getRandomArbitrary(min, max) {
     return Math.random() * (max - min) + min;
 }
@@ -46,6 +52,7 @@ function onFrame(event) {
         earthFrames = 0;
         if (!earthImg.visible){
             earthImg.visible = true;
+            // earthImgZone.visible = true;
             earthFramesUntilReturn = getRandomArbitrary(60 + score, (score/10 + 1)*360);
         }
     }
@@ -84,6 +91,9 @@ function keepInView(item) {
 }
 
 var earthImg = new Raster('earth');
+// var earthImgZone = new Path.Circle(new Point(view.center), 38);
+// earthImgZone.fillColor = 'red';
+// earthImgZone.insertBelow(earthImg);
 
 var moveStars = new function() {
     earthImg.data = {
@@ -134,7 +144,8 @@ var moveStars = new function() {
         keepInView(earthImg);
 
         var layer = project.activeLayer;
-        for (var i = 0; i < count+2; i++) {
+        var i0 = 2;
+        for (var i = i0; i < i0 + count; i++) {
             var item = layer.children[i];
             var size = item.bounds.size;
             var length = vector.length / 10 * size.width / 10;
@@ -142,12 +153,13 @@ var moveStars = new function() {
             keepInView(item);
         }
         earthImg.insertAbove(layer.children[count-1]);
+        // earthImgZone.position = earthImg.position;
     };
 };
 
 var handImg = new Raster('hand');
-var handImgZone = new Path.Circle(new Point(view.center), 35);
-handImgZone.fillColor = 'red';
+var handImgZone = new Path.Circle(new Point(view.center), 38);
+handImgZone.fillColor = 'black';
 
 var whap = new Raster('whap');
 whap.visible = false;
@@ -234,11 +246,12 @@ var moveRainbow = new function() {
         // handImg.scale(vector.length/100);
         handImg.rotate(rotated.angle - lastAngle);
         lastAngle = rotated.angle;
-        if(earthImg.visible && handImgZone.hitTest(earthImg.position)){
+        if(earthImg.visible && handImgZone.hitTest(earthImg.position, hitOptions)){
             // Temporarily show "Wha-POW!" thing.
             whap.position = view.center + (0, -60);
             whap.visible  = true;
             earthImg.visible = false;
+            // earthImgZone.visible = false;
             whap.bringToFront();
         }
         handImg.insertAbove(group);

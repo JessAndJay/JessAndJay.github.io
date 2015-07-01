@@ -10,7 +10,7 @@ title: Home
 <script type="text/javascript">
 
   var canvas = document.getElementById('myCanvas');
-  // fitToContainer(canvas);
+  fitToContainer(canvas);
 
   function fitToContainer(canvas){
     // Make it visually fill the positioned parent
@@ -25,6 +25,7 @@ title: Home
     // canvas.height  = screen.height*0.85;
     // canvas.height = Math.min(canvas.width, canvas.height);
     canvas.height = canvas.offsetHeight;
+    canvas.width = canvas.offsetWidth;
   }
 
 </script>

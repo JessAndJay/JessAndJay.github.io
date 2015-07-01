@@ -19,6 +19,7 @@ function getRandomArbitrary(min, max) {
 function onResize(event) {
     // Whenever the window is resized, recenter the path:
     handImg.position = view.center;
+    handImgZone.position = view.center;
 }
 
 function onFrame(event) {
@@ -49,6 +50,7 @@ function onFrame(event) {
         }
     }
     // txt.position = new Point(view.bounds.width*0.8,view.bounds.height*0.1);
+    // txt.content = canvasSize;
 }
 
 function onMouseMove(event) {
@@ -82,6 +84,7 @@ function keepInView(item) {
 }
 
 var earthImg = new Raster('earth');
+
 var moveStars = new function() {
     earthImg.data = {
         vector: new Point({
@@ -143,6 +146,9 @@ var moveStars = new function() {
 };
 
 var handImg = new Raster('hand');
+var handImgZone = new Path.Circle(new Point(view.center), 35);
+handImgZone.fillColor = 'red';
+
 var whap = new Raster('whap');
 whap.visible = false;
 var moveRainbow = new function() {
@@ -228,7 +234,7 @@ var moveRainbow = new function() {
         // handImg.scale(vector.length/100);
         handImg.rotate(rotated.angle - lastAngle);
         lastAngle = rotated.angle;
-        if(earthImg.visible && handImg.hitTest(earthImg.position)){
+        if(earthImg.visible && handImgZone.hitTest(earthImg.position)){
             // Temporarily show "Wha-POW!" thing.
             whap.position = view.center + (0, -60);
             whap.visible  = true;

@@ -5,6 +5,8 @@ var frames = 0;
 var earthFrames = 0;
 var score = 0;
 var earthFramesUntilReturn = 100;
+var earthFrame = 0;
+var earthFrameCount = 0;
 
 var txt = new PointText(new Point(300, 300));
 txt.visible = false;
@@ -40,11 +42,20 @@ function onFrame(event) {
     if (!earthImg.visible) {
         earthFrames++;
     }
+    // earthFrameCount++;
+    // if (earthFrameCount > 10) {
+    //     earthFrameCount = 0;
+    //     earthFrame = (earthFrame+1) % 1;
+    //     earthImg.source = 'earth-' + earthFrame.toString();
+    //     earthImg.bringToFront();
+    // }
     if(frames > 60){
         frames = 0;
         if( whap.visible ){
             whap.visible = false;            
             score = score + 1;
+            handImg.source = 'hand';
+            handImg.scale(0.9);
             txt.content = "Score: " + score;
         }
     }
@@ -90,7 +101,8 @@ function keepInView(item) {
     }
 }
 
-var earthImg = new Raster('earth');
+var earthImg = new Raster('earth-0');
+earthImg.scale(0.2);
 // var earthImgZone = new Path.Circle(new Point(view.center), 38);
 // earthImgZone.fillColor = 'red';
 // earthImgZone.insertBelow(earthImg);
@@ -158,6 +170,7 @@ var moveStars = new function() {
 };
 
 var handImg = new Raster('hand');
+handImg.scale(0.2);
 var handImgZone = new Path.Circle(new Point(view.center), 38);
 handImgZone.fillColor = 'black';
 
@@ -251,6 +264,8 @@ var moveRainbow = new function() {
             whap.position = view.center + (0, -60);
             whap.visible  = true;
             earthImg.visible = false;
+            handImg.source = 'hand2';
+            handImg.scale(1.1);
             // earthImgZone.visible = false;
             whap.bringToFront();
         }

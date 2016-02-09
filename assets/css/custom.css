@@ -1,0 +1,10 @@
+img[alt="phone"] { 
+    height: 22px;
+    /*display: inline-block;*/
+    /*margin: 0px;*/
+}
+img[alt="email"] { 
+    height: 30px;
+    /*display: inline-block;*/
+    /*margin: 0px;*/
+}

@@ -9,7 +9,7 @@ relative_permalinks: true
 # Setup
 title:            "Jess & Jay"
 tagline:          'Jess & Jay'
-description:      'June 11th, 2016<br><br>Palm Door on Sabine<br>Austin, TX 78701 (<a href="https://goo.gl/maps/kUREv422jtS2">map</a>)<hr><i>More details soon!</i>'
+description:      'June 11th, 2016<br><br>Palm Door on Sabine<br>Austin, TX 78701 (<a href="https://goo.gl/maps/kUREv422jtS2">map</a>)<hr>'
 url:              http://jessandjay.info
 baseurl:          /
 

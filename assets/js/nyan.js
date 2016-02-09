@@ -53,7 +53,7 @@ function onFrame(event) {
         frames = 0;
         if( whap.visible ){
             whap.visible = false;            
-            score = score + 1;
+            score = 2;
             handImg.source = 'hand';
             handImg.scale(0.9);
             txt.content = "Score: " + score;

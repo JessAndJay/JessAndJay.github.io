@@ -8,3 +8,6 @@ img[alt="email"] {
     /*display: inline-block;*/
     /*margin: 0px;*/
 }
+img[alt="img-us"] {
+    width: 400px;
+}

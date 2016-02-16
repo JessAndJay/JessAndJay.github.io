@@ -20,7 +20,7 @@ Some hotels near the Palm Door:
 * [Extended Stay](http://www.extendedstayamerica.com/hotels/tx/austin/downtown-6th-st) - Short Drive
 * [Others](https://www.google.com/search?q=hotels+austin&oq=hotels+austin&aqs=chrome..69i57j0l5.1673j0j7&sourceid=chrome&es_sm=122&ie=UTF-8#q=hotels%20austin&rflfq=1&rlla=0&tbm=lcl&tbs=lf_hd:-1,lf_maxhp:275,lf_maxhpitems:100-125-150-275,lf_maxhpcur:USD,lf_msr:-1,lf_hc:-1,lf_ha:0,lf_haitems:1535,lf:1,lf_ui:6&hotel_dates=2016-06-10,2016-06-12&oll=30.260803708595187,-97.73944454896849&ospn=0.015179231641496926,0.018453598022460938&oz=16&fll=30.26449187755506,-97.73890810716551&fspn=0.015178661536637605,0.018453598022460938&fz=16&hotel_ds=1&qop=1&rlfi=hd:2016-06-10%2C2016-06-12;si:)
 
-If you're coming in to town with a large group, you could also try reserving a vacation rental with:
+Other options:
 * [AirBnB](https://www.airbnb.com/)
 * [VRBO](https://www.vrbo.com/?k_clickid=42f06145-05b5-4380-81c4-e3363c6ba257&gclid=Cj0KEQiArou2BRDcoN_c6NDI3oMBEiQANeix5sJ-Pt1xRu1mBgjqmNzg4RuQi7DUR1DBLFqDbPSy7DcaAqWy8P8HAQ)
 

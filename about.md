@@ -52,7 +52,7 @@ Dinner will be provided by Salt Lick BBQ. If you are vegetarian or vegan, please
 
 Free valet parking will be provided at the venue. Alternatively, street-side parking is also available (at $1/hr).
 
-# <a name="thedayof">The Day Of</a>
+# <a name="thedayof">Contact</a>
 
 If you have any questions, call or text us at ![phone](/assets/images/phone.png) Or email us at ![email](/assets/images/email.png)
 

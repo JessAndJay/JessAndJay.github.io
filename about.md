@@ -7,7 +7,7 @@ title: Everything you need to know
 
 ### Registry
 
-Coming soon.
+Our wedding registry is at [Target](http://www.target.com/gift-registry/registry/lkWweyGK5qQEOWiqIEKeEg).
 
 ### Booking a hotel
 

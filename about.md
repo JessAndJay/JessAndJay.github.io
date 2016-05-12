@@ -5,7 +5,7 @@ title: Everything you need to know
 
 # <a name="thedayof">The Day Of</a>
 
-Both the ceremony and reception are at __[Palm Door on Sabine](https://www.google.com/maps/place/Palm+Door+on+Sabine/@30.2652453,-97.740794,16z/data=!4m2!3m1!1s0x0:0x2090a151414de094)__. The ceremony will begin at 5:30pm, followed by a dinner and reception at 6:30pm, with music by Aunt Ruby's Sweet Jazz Babies. Attire is business casual.
+Both the ceremony and reception are at __[Palm Door on Sabine](https://www.google.com/maps/place/Palm+Door+on+Sabine/@30.2652453,-97.740794,16z/data=!4m2!3m1!1s0x0:0x2090a151414de094)__. Palm Door on Sabine opens at 5:00pm to guests. The ceremony will begin at 5:30pm, followed by a dinner and reception at 6:30pm, with music by Aunt Ruby's Sweet Jazz Babies. Attire is dressy-casual.
 
 Dinner will be provided by Salt Lick BBQ. If you are vegetarian or vegan, please let us know so that we can accomodate you.
 

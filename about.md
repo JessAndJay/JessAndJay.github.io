@@ -3,11 +3,19 @@ layout: page
 title: Everything you need to know
 ---
 
+# <a name="thedayof">The Day Of</a>
+
+Both the ceremony and reception are at __[Palm Door on Sabine](https://www.google.com/maps/place/Palm+Door+on+Sabine/@30.2652453,-97.740794,16z/data=!4m2!3m1!1s0x0:0x2090a151414de094)__. Palm Door on Sabine opens at 5:00pm to guests. The ceremony will begin at 5:30pm, followed by a dinner and reception at 6:30pm, with music by Aunt Ruby's Sweet Jazz Babies. Attire is dressy-casual.
+
+Dinner will be provided by Salt Lick BBQ. If you are vegetarian or vegan, please let us know so that we can accomodate you.
+
+Free valet parking will be provided at the venue. Alternatively, street-side parking is also available (at $1/hr).
+
 # <a name="planning">Planning</a>
 
 ### Registry
 
-Coming soon.
+Our wedding registry is at [Target](http://www.target.com/gift-registry/registry/lkWweyGK5qQEOWiqIEKeEg).
 
 ### Booking a hotel
 
@@ -41,20 +49,10 @@ Other options:
 
 * Walk around South Congress and visit Uncommon Objects and eat a red velvet cupcake from Hey Cupcake!
 
-
-# <a name="thedayof">The Day Of</a>
-
-Both the ceremony and reception are at __[Palm Door on Sabine](https://www.google.com/maps/place/Palm+Door+on+Sabine/@30.2652453,-97.740794,16z/data=!4m2!3m1!1s0x0:0x2090a151414de094)__. The ceremony will begin at 5:30pm, followed by a dinner and reception at 6:30pm, with music by Aunt Ruby's Sweet Jazz Babies. Attire is business casual.
-
-Dinner will be provided by Salt Lick BBQ. If you are vegetarian or vegan, please let us know so that we can accomodate you.
-
-### Parking
-
-Free valet parking will be provided at the venue. Alternatively, street-side parking is also available (at $1/hr).
-
 # <a name="thedayof">Contact</a>
 
-If you have any questions, call or text us at ![phone](/assets/images/phone.png) Or email us at ![email](/assets/images/email.png)
+If you have any questions, call or text us at ![phone](/assets/images/phone.png) Or send us an email at hello@jessandjay.info
+
 
 # <a name="whoarewe">Who are we?</a>
 

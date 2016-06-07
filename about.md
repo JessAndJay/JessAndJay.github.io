@@ -58,6 +58,10 @@ If you have any questions, call or text us at ![phone](/assets/images/phone.png)
 
 # <a name="whoarewe">Who are we?</a>
 
+### 2016
+
+![img-us](/assets/images/us-2016.jpg "Us being dorks")
+
 ### 2015
 
 ![img-us](/assets/images/us-2015.png "Us being dorks")
